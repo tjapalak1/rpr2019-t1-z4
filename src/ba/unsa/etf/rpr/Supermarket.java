@@ -37,14 +37,13 @@ public class Supermarket
         }
         if(pozicija!=-1)
         {
-            for(int i=pozicija;i<this.broj_trenutnih;i++)
-            {
-                for(int j=i+1;j<this.broj_trenutnih-1;j++)
+
+                for(int j=pozicija;j<this.broj_trenutnih-1;j++)
                 {
                     this.artikli[j]=this.artikli[j+1];
                 }
-            }
-            this.broj_trenutnih--;
+            this.artikli[broj_trenutnih-1]=null;
+            this.broj_trenutnih-=1;
             return pomocni;
         }
 
