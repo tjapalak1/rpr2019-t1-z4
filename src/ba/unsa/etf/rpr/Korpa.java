@@ -9,7 +9,7 @@ public class Korpa
     Korpa()
     {
         this.artikli=new Artikl[50];
-        this.broj_trenutnih=0;
+        this.broj_trenutnih=150;
     }
 
     public boolean dodajArtikl(Artikl artikl)
